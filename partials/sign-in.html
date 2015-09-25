@@ -1,0 +1,11 @@
+
+<div>
+  <h1>Please sign in</h1>
+  <ul class="list-unstyled">
+    <li ng-repeat="item in students">
+      {{item.firstName}} {{item.lastName}}
+      <button ng-click="item.signedIn = !item.signedIn" ng-show="item.signedIn" class="btn btn-warning">Sign Out</button>
+      <button ng-click="item.signedIn = !item.signedIn" ng-show="!item.signedIn" class="btn btn-default">Sign In</button>
+    </li>
+  </ul>
+</div>
