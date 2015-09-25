@@ -1,6 +1,6 @@
-var logIn = angular.module("logIn", ["ui.router"]);
+var LogIn = angular.module("LogIn", ["ui.router"]);
 
-logIN.config(function($stateProvider, $urlRouterProvider) {
+LogIn.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state("home", {
     url: "",
     templateUrl: "partials/home.html"

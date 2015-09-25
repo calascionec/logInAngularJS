@@ -1,0 +1,21 @@
+<html ng-app="LogIn">
+  <head>
+    <title>Log In</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/SignInCtrl.js"></script>
+    <script src="controllers/WhoIsHereCtrl.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <a ui-sref="sign-in">Sign In</a> |
+      <a ui-sref="who-is-here">Who's here</a>
+      <div ui-view>
+
+      </div>
+    </div>
+  </body>
+</html>
