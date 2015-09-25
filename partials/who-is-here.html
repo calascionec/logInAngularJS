@@ -1,8 +1,8 @@
 <h2>Here</h2>
   <ul>
-    <li ng-repeat="item in filtered = (students | filter:{signedIn : false})">{{item.firstName}} {{item.lastName}}</li>
+    <li ng-repeat="item in filtered = (students | filter:{signedIn : true})">{{item.firstName}} {{item.lastName}}</li>
   </ul>
 <h2>Not Here</h2>
 <ul>
-  <li ng-repeat="item in filtered = (students | filter:{signedIn : true})">{{item.firstName}} {{item.lastName}}</li>
+  <li ng-repeat="item in filtered = (students | filter:{signedIn : false})">{{item.firstName}} {{item.lastName}}</li>
 </ul>
